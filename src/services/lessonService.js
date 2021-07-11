@@ -1,7 +1,6 @@
 import http from "./httpService";
-import { apiUrl } from "../configs/config.json";
 
-const apiEndpoint = apiUrl + "/lessons";
+const apiEndpoint = "/lessons";
 
 function saveQrCode(_class, lesson, qrCode, expiredTime) {
   return http.post(`${apiEndpoint}/${_class._id}/${lesson.order}`, {
