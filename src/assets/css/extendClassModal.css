@@ -1,0 +1,14 @@
+.attendanceMD {
+  width: 100% !important;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80%;
+  min-width: 100%;
+  overflow-y: hidden;
+}
+
+.attendanceMD .modal-content {
+  height: 95%;
+}

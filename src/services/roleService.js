@@ -1,0 +1,23 @@
+import http from "./httpService";
+import { apiUrl } from "../configs/config.json";
+
+const apiEndpoint = apiUrl + "/roles";
+
+function rolesUrl(id) {
+  return `${apiEndpoint}/${id}`;
+}
+
+function getRoles() {
+  return http.get(apiEndpoint);
+}
+
+function getRole(id) {
+  return http.get(rolesUrl(id));
+}
+
+const RoleService = {
+  getRoles,
+  getRole,
+};
+
+export default RoleService;
